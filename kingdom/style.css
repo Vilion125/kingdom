@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+}
+:root {
+    --main-color: #f7b70b;
+    --text-orange: #ff9a16;
+    --main-text-color: #ffffff;
+    --hover-orange: #ff7316;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body {
+    background: black;
+    color: var(--main-text-color);
+}
+a {
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    transform: translateY(-7px);
+    color: #636363;
+}
+li {
+    list-style-type: none;
+}
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 300;
+    z-index: 5;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    padding-right: 50px;
+}
+.header .navbar button {
+    padding: 10px 10px 10px 10px;
+    background: black;
+    border-radius: 20px;
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+.header .navbar button:hover{
+    transform: scale(1.1);
+}
+#menu-icon {
+    display: none;
+    color: black;
+    font-size: 3rem;
+    transition: 0.3s ease;
+}
+#menu-icon:hover {
+    background: #ff73166e;
+    padding: 5px 7px 5px 7px;
+    border-radius: 50%;
+}
+.header .logo img {
+    width: 25rem;
+    transition: 0.3s ease-in-out;
+}
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+
+.home img {
+    width: 100%;
+    filter: brightness(40%);
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+.home .description {
+    font-size: 2.7vw;
+    width: 90%;
+    margin-top: -250px;
+    padding: 2% 15% 13% 15%;
+    filter: brightness(100%);
+}
+.about {
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.about img {
+    width: 45vw;
+}
+
+.about .descrption {
+    width: 35%;
+    font-size: 1.7rem;
+    margin-left: 50px;
+}
+
+.about-us img {
+    border-radius: 10%;
+}
+
+.about .descrption h2 {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about .descrption i {
+    display: block;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+.achievements {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 2rem;
+    gap: 10px;
+}
+.achievements .block {
+    text-align: center;
+    border: 2px solid white;
+    padding: 20px 40px 20px 40px;
+    flex: 1 1 30%;
+    transition: 0.4s ease-in-out;
+}
+.achievements .block:hover {
+    transform: translateY(-10px);
+}
+.achievements .block  i {
+    margin-bottom: 30px;
+}
+.achievements .block p {
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--main-color);
+    transition: 2s ease-in-out ;
+}
+.achievements .block p:hover{
+    transform: translateY('4px');
+}
+
+.contact {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact h2 {
+   font-size: 2.4rem;
+
+}
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin: 4rem auto;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .btn {
+    background-color: black;
+    padding: 6px 7px 6px 7px;
+    color: rgb(201, 201, 201);
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+.contact form .btn:hover {
+    transform: scale(1.1);
+
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--section-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+.social-media{
+    font-size: 3rem;
+    text-align: center;
+}
+.social-media a {
+    font-size: 4rem;
+    color: var(--main-color);
+    transition: 0.5 ease-in-out;
+}
+.social-media a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+.social-media .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;
+    font-size: 3rem;
+}
+
+
+
+@media(max-width: 804px) {
+    .contact form {
+        flex-direction: column;
+        padding: 0 10% 0 10%;
+    }
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        align-items: center;
+    
+    }
+     .about-us img{
+        width: 65vw;
+        margin-left: 80px;
+        margin-top: 30px;
+        transition: 0.4s ease-in-out;
+    }
+    .about-us img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px var(--main-color);
+    }
+    .about .descrption{
+        width: 90%;
+        font-size: 1.4rem;
+        padding: 10px 4% 10px 4%;
+        margin-right: 30px;
+    }
+    .about .descrption h2 {
+        font-size: 3rem;
+    }
+    .home .description {
+        margin-top: -150px;
+        font-size: 3.2vw;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+  
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 160px;
+        padding: 1rem 3%;
+        background: var(--main-color);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        line-height: 50px;
+        display: none;
+    }
+
+    .header .navbar.active {
+        display: block;
+    }
+}
